@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.style as pltstyle
+from bokeh.plotting import figure, output_file, show
 
 
 dat_files_to_plot = ["temps_20190626.txt"]
@@ -19,6 +20,8 @@ def main():
     # plot using pandas built-in
     # maybe in future use bokeh
     pandas_plot(dat_df)
+
+    # bokeh_plot(dat_df)
 
 
 def get_dat_to_plot(file_list):
@@ -68,6 +71,11 @@ def pandas_plot(df):
     plt.xlabel("Date Time [UTC]")
 
     plt.show(block=True)
+
+
+def bokeh_plot(df):
+
+    pass
 
 
 if __name__ == '__main__':

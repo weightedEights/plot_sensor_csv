@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3bc113e3-b089-46aa-b06d-76d51cad8e47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/temps_20190625.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/temps_20190625.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_sensor_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_sensor_csv.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +19,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_sensor_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+            <state relative-caret-position="357">
+              <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#162#465#0" />
                 <element signature="e#376#509#0" />
+                <element signature="e#550#626#0" />
+                <element signature="e#796#1776#0" />
+                <element signature="e#1940#1944#0" />
               </folding>
             </state>
           </provider>
@@ -208,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561460415989</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add 26Jun data, added plotting code">
+      <created>1561553287890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561553287890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -240,7 +250,8 @@
     <MESSAGE value="change interpreter" />
     <MESSAGE value="start building functions" />
     <MESSAGE value="add 25Jun2019 data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 25Jun2019 data" />
+    <MESSAGE value="add 26Jun data, added plotting code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 26Jun data, added plotting code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/temps_snippet.txt">
@@ -287,11 +298,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_sensor_csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="357">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#162#465#0" />
             <element signature="e#376#509#0" />
+            <element signature="e#550#626#0" />
+            <element signature="e#796#1776#0" />
+            <element signature="e#1940#1944#0" />
           </folding>
         </state>
       </provider>
