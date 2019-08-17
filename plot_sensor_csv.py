@@ -20,7 +20,6 @@ def main():
     # plot using pandas built-in
     # maybe in future use bokeh
     pandas_plot(dat_df)
-
     # bokeh_plot(dat_df)
 
 

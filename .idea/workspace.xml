@@ -19,15 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_sensor_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+            <state relative-caret-position="229">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#162#465#0" />
-                <element signature="e#376#509#0" />
-                <element signature="e#550#626#0" />
-                <element signature="e#796#1776#0" />
-                <element signature="e#1940#1944#0" />
+                <element signature="e#875#1957#0" />
               </folding>
             </state>
           </provider>
@@ -69,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/data/temps_20190625.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" selection-end-column="18" />
+              <caret selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -100,6 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,7 +113,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,19 +214,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561553287890</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="begin bokeh plotting framework">
+      <created>1561554008193</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561554008193</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.18598525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50080776" side_tool="true" weight="0.18598525" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -251,7 +253,8 @@
     <MESSAGE value="start building functions" />
     <MESSAGE value="add 25Jun2019 data" />
     <MESSAGE value="add 26Jun data, added plotting code" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 26Jun data, added plotting code" />
+    <MESSAGE value="begin bokeh plotting framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="begin bokeh plotting framework" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/temps_snippet.txt">
@@ -264,6 +267,24 @@
     <entry file="file://$PROJECT_DIR$/data/temps_corrected.txt" />
     <entry file="file://$PROJECT_DIR$/repair_data_format.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_sensor_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#875#1957#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/temps_20190626.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/temps_20190622.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -285,29 +306,7 @@
     <entry file="file://$PROJECT_DIR$/data/temps_20190625.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/temps_20190626.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot_sensor_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#162#465#0" />
-            <element signature="e#376#509#0" />
-            <element signature="e#550#626#0" />
-            <element signature="e#796#1776#0" />
-            <element signature="e#1940#1944#0" />
-          </folding>
+          <caret selection-end-column="18" />
         </state>
       </provider>
     </entry>
