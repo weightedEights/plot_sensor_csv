@@ -20,13 +20,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_sensor_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+            <state relative-caret-position="85">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#594#728#0" />
-                <element signature="e#768#886#0" />
-                <element signature="e#915#1996#0" />
+                <element signature="e#590#724#0" />
+                <element signature="e#764#882#0" />
+                <element signature="e#911#1992#0" />
+                <element signature="e#2126#2821#0" />
               </folding>
             </state>
           </provider>
@@ -206,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566046395577</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="bokeh plot refinement">
+      <created>1566068869883</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1566068869883</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -222,12 +230,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.18598525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.18598525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50080776" side_tool="true" weight="0.18598525" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -251,7 +259,8 @@
     <MESSAGE value="begin bokeh plotting framework" />
     <MESSAGE value="new data" />
     <MESSAGE value="bokeh initial plot" />
-    <option name="LAST_COMMIT_MESSAGE" value="bokeh initial plot" />
+    <MESSAGE value="bokeh plot refinement" />
+    <option name="LAST_COMMIT_MESSAGE" value="bokeh plot refinement" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/temps_corrected.txt" />
@@ -294,13 +303,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_sensor_csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#594#728#0" />
-            <element signature="e#768#886#0" />
-            <element signature="e#915#1996#0" />
+            <element signature="e#590#724#0" />
+            <element signature="e#764#882#0" />
+            <element signature="e#911#1992#0" />
+            <element signature="e#2126#2821#0" />
           </folding>
         </state>
       </provider>

@@ -16,7 +16,7 @@ def main():
 
     # create pandas df time series
     dat_df = df_from_dat_list(dat_list_to_plt)
-    # print(dat_df.head())
+    print(dat_df.head())
 
     # plot using pandas built-in
     # maybe in future use bokeh
@@ -38,6 +38,8 @@ def df_from_dat_list(dat_list):
 
     # parse dates and use as index
     dat_df = pd.read_csv(dat_list[0], parse_dates=True, index_col=0)
+    dat_df.rename_axis("date", axis="index", inplace=True)
+    dat_df.columns = ["temp_top", "temp_bottom"]
 
     return dat_df
 
@@ -78,13 +80,13 @@ def bokeh_plot(df):
     output_file("interior_temps.html")
 
     hover = HoverTool(
-        tooltips = [
-            ("date", "$x"),
+        tooltips=[
+            ("date", "@x{%Y-%m-%d %H:%M:%S}"),
             ("temp", "$y")
         ],
 
-        formatters = {
-            "date" : "datetime"
+        formatters={
+            "x": "datetime"
         }
     )
 
@@ -96,7 +98,7 @@ def bokeh_plot(df):
     p.line(x=df.index, y=df.iloc[:, 1], legend="Bottom Shelf Temp", line_width=2, color="blue")
 
     p.title.text = "Interior Temps, Orange Fish Hut #1"
-    p.yaxis.axis_label = "Temp \degreeC"
+    p.yaxis.axis_label = "Temp [\N{DEGREE SIGN}C]"
     p.xaxis.axis_label = "Date Time [UTC]"
 
     show(p)
