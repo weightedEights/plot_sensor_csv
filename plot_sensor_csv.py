@@ -3,9 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.style as pltstyle
 from bokeh.plotting import figure, output_file, show
+from bokeh.models import BoxAnnotation
 
 
-dat_files_to_plot = ["temps_20190626.txt"]
+dat_files_to_plot = ["temps_20190817.txt"]
 
 
 def main():
@@ -15,12 +16,12 @@ def main():
 
     # create pandas df time series
     dat_df = df_from_dat_list(dat_list_to_plt)
-    print(dat_df.head())
+    # print(dat_df.head())
 
     # plot using pandas built-in
     # maybe in future use bokeh
-    pandas_plot(dat_df)
-    # bokeh_plot(dat_df)
+    # pandas_plot(dat_df)
+    bokeh_plot(dat_df)
 
 
 def get_dat_to_plot(file_list):
@@ -65,7 +66,7 @@ def pandas_plot(df):
     # ax.grid(which='major', linestyle='-', linewidth='0.5')
     # ax.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
 
-    plt.title("Overnight Temps, Purple Fish Hut #2")
+    plt.title("Interior Temps, Orange Fish Hut #1")
     plt.ylabel("Temp [$\degree$C]")
     plt.xlabel("Date Time [UTC]")
 
@@ -74,7 +75,18 @@ def pandas_plot(df):
 
 def bokeh_plot(df):
 
-    pass
+    output_file("interior_temps.html")
+
+    p = figure(x_axis_type="datetime")
+
+    p.line(x=df.index, y=df.iloc[:, 0], legend="Top Shelf Temp")
+    p.line(x=df.index, y=df.iloc[:, 1], legend="Bottom Shelf Temp")
+
+    p.title.text = "Interior Temps, Orange Fish Hut #1"
+    p.yaxis.axis_label = "emp [$\degree$C]"
+    p.xaxis.axis_label = "Date Time [UTC]"
+
+    show(p)
 
 
 if __name__ == '__main__':
