@@ -77,6 +77,8 @@ def pandas_plot(df):
 
 def bokeh_plot(df):
 
+    filtered_df = df[(df["temp_bottom"] > -25) & (df["temp_bottom"] < 20)]
+
     output_file("interior_temps.html")
 
     hover = HoverTool(
@@ -92,10 +94,10 @@ def bokeh_plot(df):
 
     tools = [hover, 'box_zoom', 'save', 'reset']
 
-    p = figure(x_axis_type="datetime", plot_width=1280, plot_height=800, tools=tools)
+    p = figure(x_axis_type="datetime", plot_width=1600, plot_height=900, tools=tools)
 
-    p.line(x=df.index, y=df.iloc[:, 0], legend="Top Shelf Temp", line_width=2, color="red")
-    p.line(x=df.index, y=df.iloc[:, 1], legend="Bottom Shelf Temp", line_width=2, color="blue")
+    p.line(x=filtered_df.index, y=filtered_df.iloc[:, 0], legend="Top Shelf Temp", line_width=2, color="red")
+    p.line(x=filtered_df.index, y=filtered_df.iloc[:, 1], legend="Bottom Shelf Temp", line_width=2, color="blue")
 
     p.title.text = "Interior Temps, Orange Fish Hut #1"
     p.yaxis.axis_label = "Temp [\N{DEGREE SIGN}C]"
